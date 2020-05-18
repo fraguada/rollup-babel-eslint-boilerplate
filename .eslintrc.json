@@ -1,26 +1,25 @@
 {
-    "extends": "eslint:recommended",
-    "plugins": [
-        "import"
-    ],
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
+    "extends": "eslint:recommended",
     "globals": {
-      "ENV": true
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": 11,
         "sourceType": "module"
     },
     "rules": {
         "indent": [
             "error",
-            2
+            4
         ],
         "linebreak-style": [
-            "error",
+            "off",
             "unix"
         ],
         "quotes": [
@@ -30,7 +29,6 @@
         "semi": [
             "error",
             "never"
-        ],
-        "no-console": 0
+        ]
     }
 }

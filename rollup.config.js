@@ -9,7 +9,7 @@ export default [
 	{
 		input: 'src/main.js',
 		output: {
-			name: 'howLongUntilLunch',
+			name: 'lib',
 			file: pkg.browser,
 			format: 'umd'
 		},
